@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    color: #181818;
+    line-height: 2.5rem;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: large;
+    border-color: #181818;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+header {
+    margin: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+nav ul {
+    justify-content: flex-end;
+    transition: all 0.5s ease;
+}
+
+nav li {
+    border: 1px solid #181818;
+    padding: 5px 10px;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.hero {
+    height: 300px;
+    margin: 20px;
+    border: 2px solid #181818;
+    padding: 30px;
+}
+
