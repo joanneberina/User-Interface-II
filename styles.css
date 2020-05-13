@@ -6,7 +6,6 @@ body {
     font-size: 16px;
     margin: 0 auto;
     color: #181818;
-    line-height: 2.5rem;
 }
 
 button {
@@ -64,7 +63,7 @@ ul {
 }
 
 .hero {
-    height: 300px;
+    height: 400px;
     margin: 20px;
     border: 2px solid #181818;
     padding: 30px;
@@ -91,6 +90,10 @@ main {
     width: 300px;
     height: 250px;
     border: 2px solid #181818;
+}
+
+.project-details {
+    margin-bottom: 50px;
 }
 
 footer {
