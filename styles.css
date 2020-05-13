@@ -29,32 +29,25 @@ a:link {
 /* Header and nav */
 
 header {
-    margin: 10px;
+    width: 100%;
 }
 
 nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     width: 100%;
-    transition: all 0.5s ease;
 }
 
 nav ul {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
     transition: all 0.5s ease;
 }
 
 nav li {
     border: 1px solid #181818;
-    padding: 5px 10px;
-}
-
-ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+    margin: 5px 10px;
+    padding: 10px;
 }
 
 #nav-inactive {
@@ -66,7 +59,7 @@ ul {
     height: 400px;
     margin: 20px;
     border: 2px solid #181818;
-    padding: 30px;
+    padding: 20px;
 }
 
 /* Projects */
@@ -89,7 +82,6 @@ main {
 .project-image {
     width: 300px;
     height: 250px;
-    border: 2px solid #181818;
 }
 
 .project-details {
@@ -115,6 +107,25 @@ footer {
 
 /* media query: 600px */
 @media (min-width: 600px) {
+    header {
+        margin: 10px;
+    }
+
+    nav {
+        padding-right: 20px;;
+        transition: all 0.5s ease;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero {
+        margin: 20px;
+        padding-left: 50px;
+    }
+
     .myprojects {
         display: flex;
         flex-wrap: wrap;
