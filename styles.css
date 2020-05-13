@@ -19,6 +19,7 @@ button {
 button:hover {
     color: white;
     background-color: #181818;
+    transition: all 0.5s ease;
 }
 
 a:link {
@@ -46,8 +47,8 @@ nav ul {
 
 nav li {
     border: 1px solid #181818;
-    margin: 5px 10px;
-    padding: 10px;
+    margin: 2px;
+    padding: 10px 20px;
 }
 
 #nav-inactive {
