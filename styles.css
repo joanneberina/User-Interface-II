@@ -18,7 +18,10 @@ button {
 
 a:link {
     text-decoration: none;
+    color: #181818;
 }
+
+/* Header and nav */
 
 header {
     margin: 10px;
@@ -49,6 +52,11 @@ ul {
     list-style: none;
 }
 
+#nav-inactive {
+    background-color: #181818;
+    color: white;
+}
+
 .hero {
     height: 300px;
     margin: 20px;
@@ -56,3 +64,34 @@ ul {
     padding: 30px;
 }
 
+/* Projects */
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 25px;
+    padding-top: 50px;
+}
+
+.myprojects {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.project-image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #181818;
+}
+
+/* media query: 600px */
+@media (min-width: 600px) {
+    .myprojects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project {
+        margin: 20px;
+    }
+}
