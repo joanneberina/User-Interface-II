@@ -14,6 +14,12 @@ button {
     border-radius: 3px;
     font-size: large;
     border-color: #181818;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: #181818;
 }
 
 a:link {
@@ -89,12 +95,19 @@ main {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     background-color: lightgray;
+    padding: 50px 0;
 }
 
 .social {
+    padding: 20px;
+}
 
+.icon {
+    margin: 0 20px;
+    color: #181818;
 }
 
 /* media query: 600px */
