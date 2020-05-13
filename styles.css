@@ -59,9 +59,15 @@ nav li {
 .hero {
     height: 400px;
     margin: 20px;
-    border: 2px solid #181818;
+    background-image: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);
     padding: 20px;
 }
+
+
+.hero {
+    color: white;
+}
+
 
 /* Projects */
 
