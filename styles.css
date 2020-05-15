@@ -1,24 +1,25 @@
 * {
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 
 body {
     font-size: 16px;
     margin: 0 auto;
-    color: #181818;
+    color: #313036;
 }
 
 button {
     padding: 10px 20px;
     border-radius: 3px;
     font-size: large;
-    border-color: #181818;
+    background-color: #F4F4F4;
     transition: all 0.5s ease;
 }
 
 button:hover {
     color: white;
-    background-color: #181818;
+    background-color: #313036;
     transition: all 0.5s ease;
 }
 
@@ -46,28 +47,33 @@ nav ul {
 }
 
 nav li {
-    border: 1px solid #181818;
     margin: 2px;
     padding: 10px 20px;
 }
 
 #nav-inactive {
-    background-color: #181818;
-    color: white;
+    background-color:#F0F2F5;
+    color: #181818;
 }
 
 .hero {
     height: 400px;
-    margin: 20px;
-    background-image: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);
+    margin: 0 auto;
+    background-image: url(https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
     padding: 20px;
 }
 
-
-.hero {
+.hero h1 {
+    font-size: 48px;
     color: white;
+    margin-bottom: 0;
 }
 
+.hero p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 12px;
+}
 
 /* Projects */
 
@@ -99,17 +105,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightgray;
+    background-color: #2C2B33;
     padding: 50px 0;
 }
 
 .social {
-    padding: 20px;
+    padding-bottom: 30px;
+    color: #F0F2F5;
 }
 
-.icon {
+.icon .fab {
     margin: 0 20px;
-    color: #181818;
+    color: #F0F2F5;
+    font-size: 24px;
 }
 
 /* media query: 600px */
@@ -119,8 +127,26 @@ footer {
     }
 
     nav {
-        padding-right: 20px;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
         transition: all 0.5s ease;
+    }
+
+    nav .logo {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .logo p {
+        padding-left: 10px;
+        font-weight: 500;
     }
 
     nav ul {
@@ -129,8 +155,7 @@ footer {
     }
 
     .hero {
-        margin: 20px;
-        padding-left: 50px;
+        max-width: 90%;
     }
 
     .myprojects {
