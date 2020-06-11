@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    color: #313036;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: large;
+    background-color: #F4F4F4;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    color: white;
+    background-color: #313036;
+    transition: all 0.5s ease;
+}
+
+a:link {
+    text-decoration: none;
+    color: #181818;
+}
+
+/* Header and nav */
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    transition: all 0.5s ease;
+}
+
+nav li {
+    margin: 2px;
+    padding: 10px 20px;
+}
+
+#nav-inactive {
+    background-color:#F0F2F5;
+    color: #181818;
+}
+
+.hero {
+    height: 400px;
+    margin: 0 auto;
+    background-image: url(https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+/* Projects */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.myprojects {
+    padding: 10px;
+}
+
+.project {
+    margin: 0 auto;
+}
+
+.project-image {
+    width: 300px;
+    height: 250px;
+}
+
+.project-details {
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C2B33;
+    padding: 50px 0;
+}
+
+.social {
+    padding-bottom: 30px;
+    color: #F0F2F5;
+}
+
+.icon .fab {
+    margin: 0 20px;
+    color: #F0F2F5;
+    font-size: 24px;
+}
+
+/* media query: 600px */
+@media (min-width: 600px) {
+    header {
+        margin: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        transition: all 0.5s ease;
+    }
+
+    nav .logo {
+        display: flex;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .logo p {
+        padding-left: 10px;
+        font-weight: 500;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero {
+        max-width: 90%;
+    }
+
+    .myprojects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .project {
+        margin: 20px;
+    }
+}
